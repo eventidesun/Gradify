@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0e0e0;
+    padding: 15px 40px;
+    font-size: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 2px solid #d1d1d1;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-title {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black; /* Default color */
+}
+
+.nav-title:visited {
+    color: black; /* Ensures visited link stays black */
+}
+
+.nav-title:hover {
+    color: #007bff; /* Optional: Change color on hover */
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn, .home-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn svg, .home-icon svg {
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.menu-btn:hover svg, .home-icon:hover svg {
+    color: #007bff; /* Changes color on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 200px;
+    z-index: 100;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 10px;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.dropdown-menu ul li:hover {
+    background: #f0f0f0;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
